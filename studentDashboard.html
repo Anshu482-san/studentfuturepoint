@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="studentDashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Student Dashboard</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <section id="noticeSection">
+        <h2>📢 Notices</h2>
+        <ul id="noticeList"></ul>
+    </section>
+
+    <section id="feeSection">
+        <h2>💰 My Fee Status</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="feeTable"></tbody>
+        </table>
+    </section>
+
+    <section id="notificationSection">
+        <h2>🔔 Notifications</h2>
+        <ul id="notificationList"></ul>
+    </section>
+    
+    <script type="module" src="studentDashboard.js"></script>
+</body>
+</html>

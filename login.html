@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Student Future Point</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Fix: Corrected JS file and module type -->
+    <script type="module" src="LoginPage.js"></script>
+
+    <style>
+        body {
+            background-image: url('images/background.png'); /* Removed `/` from path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Side: Login Form -->
+        <div class="login-form">
+            <img src="images/welcome.jpg" alt="Student Future Point Logo" style="width: 400px; height: auto;">
+            <br><br>
+            <h3>Enter your credentials to access your account.</h3>
+            <br><br>
+            <form id="loginForm">
+                <label>Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required> <!-- Fixed ID -->
+                
+                <label>Password</label>
+                <input type="password" id="login-password" placeholder="Enter password" required> <!-- Fixed ID -->
+                
+                <div class="remember-forgot">
+                    <label><input type="checkbox" id="rememberMe"> Remember me</label>
+                    <a href="#" onclick="forgotPassword()">Forgot password?</a>
+                </div>
+
+                <button type="submit" id="loginBtn">Log In</button>
+
+                <p class="or">Or, Login with</p>
+                <button type="button" class="google-login" id="googleLogin">
+                    <img src="/images/google icon.png" alt="Google"> Sign in with Google
+                </button>
+                
+                <p class="register-text">Don't have an account? <a href="register.html">Register here</a></p>
+            </form>
+        </div>
+
+        <!-- Right Side: Abstract Graphics -->
+        <div class="login-graphics">
+            <img src="images/design.PNG" alt="Graphics" style="width: 296px; height: auto;">
+        </div>
+    </div>
+</body>
+</html>

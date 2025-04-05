@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adminDashboard.css">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+
+    <button onclick="logoutUser()">Logout</button>
+
+    <!-- ✅ Student List -->
+    <h2>Student List</h2>
+    <ul id="studentList"></ul>
+
+    <!-- ✅ Fee Update Section -->
+    <h2>Update Fees</h2>
+    <label for="feeStudentSelect">Select Student:</label>
+    <select id="feeStudentSelect"></select>
+
+    <label for="feeMonth">Month:</label>
+    <input type="text" id="feeMonth" placeholder="e.g. January">
+
+    <label for="feeAmount">Amount:</label>
+    <input type="text" id="feeAmount" placeholder="e.g. 5000">
+
+    <label for="feeStatus">Status:</label>
+    <select id="feeStatus">
+        <option value="Paid">Paid</option>
+        <option value="Unpaid">Unpaid</option>
+    </select>
+
+    <button onclick="updateFees()">Update Fee</button>
+
+    <!-- ✅ Notification System -->
+    <h2>Send Notification</h2>
+    <label for="notificationStudentSelect">Select Student:</label>
+    <select id="notificationStudentSelect"></select>
+    <input type="text" id="notificationMessage" placeholder="Enter message">
+    <button onclick="sendNotification()">Send Notification</button>
+
+    <!-- ✅ Notice Section -->
+    <h2>Update Notice</h2>
+    <textarea id="noticeText" placeholder="Enter notice for all"></textarea>
+    <button onclick="updateNotice()">Update Notice</button>
+    <ul id="noticeList"></ul> <!-- Now showing notices date-wise -->
+
+    <script type="module" src="adminDashboard.js"></script>
+    <script type="module" src="firebaseConfig.js"></script>
+</body>
+</html>

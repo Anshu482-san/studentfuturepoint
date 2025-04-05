@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #43ce78, #ec75b1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    width: 900px;
+    background: linear-gradient(135deg, #d932dfa9, #604facb7);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Left Side: Login Form */
+.login-form {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember-forgot {
+    display: flex;
+    background: linear-gradient(135deg, #e6ecff, #604fac);
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5522c4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1bb992;
+}
+
+.or {
+    text-align: center;
+    margin: 15px 0;
+    color: #000000;
+}
+
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.google-login img {
+    width: 20px;
+}
+
+.register-text {
+    color: #68061ce5;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-text a {
+    color: #68061ce5;
+    font-weight: bold;
+}
+
+/* Right Side: Graphics */
+.login-graphics {
+    flex: 1;
+    background: linear-gradient(135deg, #6C4AB6, #3A2D7D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-graphics img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-image: url('/images/background.png'); /* Update with actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
